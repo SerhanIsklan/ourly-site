@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ourly · Privacy policy</title><link rel="icon" href="favicon.png"><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><img src="icon.png" alt=""><b>ourly</b><span class="lang"><a href="privacy-tr.html">Türkçe</a></span></header>
+<h1>Privacy policy</h1>
+<p class="muted">Last updated: 16 October 2026 · Nevermiss Studio</p>
+
+<section><h2>The short version</h2>
+<p>Ourly is a private space for two people. Everything you share in it (moods, greetings, notes, drawings, plans, special days and cycle updates) is encrypted on your phone before it leaves, and only your phone and the phone of the person you paired with can open it. We can't read it, and nobody else can either.</p>
+<p>There are no ads, no analytics and no tracking in Ourly.</p></section>
+
+<section><h2>What stays only on your phone</h2>
+<ul>
+<li>Your name, and the name you give the person you're paired with.</li>
+<li>Your own cycle log, if you track your cycle. It is sent to your person only if you turn sharing on, and then only in encrypted form.</li>
+<li>Your settings and the history of what you two shared.</li>
+</ul></section>
+
+<section><h2>What our server holds, and why</h2>
+<p>To deliver things between two phones, Ourly uses a server (Supabase, hosted in Tokyo, Japan). It holds only:</p>
+<table>
+<tr><th>Data</th><th>Why</th></tr>
+<tr><td>An anonymous account ID (no email, no phone number, no name)</td><td>To know which phone is which</td></tr>
+<tr><td>Who is paired with whom, and each phone's public encryption key</td><td>To deliver to the right person and let your phones agree on a shared key</td></tr>
+<tr><td>Encrypted items, with the time they were sent and their size</td><td>To deliver them, including when the other phone is offline. We can't read their content.</td></tr>
+<tr><td>A short invite code, for 24 hours</td><td>So the other person can pair with you</td></tr>
+<tr><td>Your phone's push token</td><td>To wake the other phone when something arrives</td></tr>
+</table>
+<p>Notifications are sent through Google Firebase Cloud Messaging. The push itself carries no content, only "something new arrived". Your phone then fetches the encrypted item, opens it and writes the notification itself.</p></section>
+
+<section><h2>Purchases</h2>
+<p>Ourly Plus is bought through Google Play. Google handles the payment; we never see your payment details. Whether Plus is on is shared with your person (encrypted), so one subscription covers both of you.</p></section>
+
+<section><h2>Health information</h2>
+<p>Cycle tracking is optional and off unless you turn it on. Your cycle log stays on your phone. If you choose to share it, your person receives your current phase, cycle days and your own tips, encrypted. We never see it and never use it for anything.</p></section>
+
+<section><h2>Keeping and deleting</h2>
+<ul>
+<li><b>Unpair:</b> removes the pair and everything shared through it from our server.</li>
+<li><b>Delete everything</b> (Settings): deletes your account and everything tied to it from our server right away, then wipes the app on your phone. See <a href="delete-account.html">how to delete your account</a>.</li>
+<li>Only your two phones hold the key. If a phone is lost or reset, its old messages can't be recovered by anyone, including us.</li>
+</ul></section>
+
+<section><h2>Sharing</h2>
+<p>We don't sell or share your data with anyone. The only services involved are Supabase (storage and delivery of encrypted items), Google Firebase (push wake-ups) and Google Play (purchases).</p></section>
+
+<section><h2>Children</h2>
+<p>Ourly is meant for people aged 18 and over.</p></section>
+
+<section><h2>Your rights</h2>
+<p>You can delete your data at any time from the app. Under GDPR and Turkey's KVKK you can also ask us what we hold about you, or ask us to delete it, using the contact email on Ourly's Google Play page. Because we only hold anonymous IDs and encrypted data, we may ask you to send the request from inside the app.</p></section>
+
+<section><h2>Changes</h2>
+<p>If this policy changes, we'll update this page and the date at the top.</p></section>
+</main></body></html>
